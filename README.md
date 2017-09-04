@@ -1,8 +1,8 @@
 # front-end
 Introduction: 
-* 1, An Ember application example for beginners.
-* 2, Front-end of Online-Store  base on EmberJs
-* 3, Open & free for U.
+* 1, An example for beginners to study SPA.
+* 2, An online-store base on EmberJS
+* 3, Open & Free.
 
 Author:
 
