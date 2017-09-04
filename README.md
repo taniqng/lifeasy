@@ -6,8 +6,8 @@
 
 Author:
 
-WeChat - skyour721
-E-Mail - sk.your@qq.com
+* WeChat - skyour721
+* E-Mail - sk.your@qq.com
 
 ## Prerequisites
 
