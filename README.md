@@ -1,7 +1,13 @@
 # front-end
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+1, An Ember application example for beginners.
+2, Front-end of Online-Store  base on EmberJs
+3, Open & free for U.
+
+Author:
+
+WeChat - skyour721
+E-Mail - sk.your@qq.com
 
 ## Prerequisites
 
