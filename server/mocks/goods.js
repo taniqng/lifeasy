@@ -8,17 +8,19 @@ module.exports = function(app) {
   goodsRouter.get('/', function(req, res) {
     res.send([{
         id:1,
-        name:"天然压榨花生油",
-        description:"优选白沙花生，粒粒饱满，传统手工压榨技术，第一时间运送到您手中.",
+        name:"食物油",
+        description:"精选西西伯利亚纯种花生。",
         picture:"/img/Desert.jpg",
         minPic:"/img/Desert.jpg",
+        count:0,
         shopId:1
       },{
           id:2,
           name:"菜籽油",
           description:"优选油菜，菜香四溢.",
-          picture:"/img/Desert.jpg",
+          picture:"/img/Desert.jpg,/img/Desert.jpg",
           minPic:"/img/Desert.jpg",
+          count:99,
           shopId:1
         }]
     );

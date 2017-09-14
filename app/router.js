@@ -14,6 +14,10 @@ Router.map(function() {
       })
     });
   });
+  this.route('orders', function() {
+    this.route('create');
+  });
+  this.route('cart');
 });
 
 export default Router;

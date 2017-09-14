@@ -1,1 +1,19 @@
-商品细节展示
+
+<div class="row">
+  {{#path-navi}}
+    <li class="active">商品详情</li>
+  {{/path-navi}}
+</div>
+
+<div class="row">
+
+  <div class=".col-xs-12 .col-sm-6 .col-md-8">
+    {{#each detailPics as |pic|}}
+    <a href="#" class="thumbnail">
+      <img class="media-object" src="{{pic}}" alt="...">
+    </a>
+  {{/each}}
+  </div>
+
+</div>
+{{#link-to "orders.create" class="btn btn-primary" role="button"}}下单{{/link-to}}
