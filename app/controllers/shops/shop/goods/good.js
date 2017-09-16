@@ -1,6 +1,9 @@
 import Ember from 'ember';
+const { inject: { service }, computed } = Ember;
 
 export default Ember.Controller.extend({
+
+  shoppingCart: service(),
 
   detailPics: Ember.computed('model.picture', function() {
     let pic = this.get('model.picture');
@@ -10,5 +13,12 @@ export default Ember.Controller.extend({
       return undefined;
     }
 
-  })
+  }),
+
+  actions: {
+    addToCart (good) {
+      this.get('shoppingCart').addToCart(good, 1);
+    }
+  }
+
 });

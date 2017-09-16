@@ -13,7 +13,8 @@ module.exports = function(app) {
         picture:"/img/Desert.jpg",
         minPic:"/img/Desert.jpg",
         count:0,
-        shopId:1
+        shopId:1,
+        price:200,
       },{
           id:2,
           name:"菜籽油",
@@ -21,7 +22,8 @@ module.exports = function(app) {
           picture:"/img/Desert.jpg,/img/Desert.jpg",
           minPic:"/img/Desert.jpg",
           count:99,
-          shopId:1
+          shopId:1,
+          price:200
         }]
     );
   });

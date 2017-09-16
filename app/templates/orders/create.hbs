@@ -39,111 +39,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">订单详情</div>
   <div class="panel-body">
-
-    <div class="row">
-      <div class="col-xs-12 col-md-3">
-        <table>
-          <tr>
-            <td width="39%">
-              <a href="#" class="thumbnail">
-                <img src="/img/Desert.jpg" alt="数量： 1">
-              </a>
-            </td>
-            <td width="40%">
-              <h5>花生油</h5>
-            </td>
-
-            <td align="right">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              <span class="badge">1</span>
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="col-xs-12 col-md-3">
-        <table>
-          <tr>
-            <td width="39%">
-              <a href="#" class="thumbnail">
-                <img src="/img/Desert.jpg" alt="数量： 1">
-              </a>
-            </td>
-            <td width="35%">
-              <h5>花生油</h5>
-            </td>
-
-            <td align="right">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              <span class="badge">1</span>
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="col-xs-12 col-md-3">
-        <table>
-          <tr>
-            <td width="39%">
-              <a href="#" class="thumbnail">
-                <img src="/img/Desert.jpg" alt="数量： 1">
-              </a>
-            </td>
-            <td width="35%">
-              <h5>花生油花生油</h5>
-            </td>
-
-            <td align="right">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              <span class="badge">12</span>
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="col-xs-12 col-md-3">
-        <table>
-          <tr>
-            <td width="39%">
-              <a href="#" class="thumbnail">
-                <img src="/img/Desert.jpg" alt="数量： 1">
-              </a>
-            </td>
-            <td width="35%">
-              <h5>花生油花生油花生油</h5>
-            </td>
-
-            <td align="right">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              <span class="badge">122</span>
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="col-xs-12 col-md-3">
-        <table>
-          <tr>
-            <td width="39%">
-              <a href="#" class="thumbnail">
-                <img src="/img/Desert.jpg" alt="数量： 1">
-              </a>
-            </td>
-            <td width="35%">
-              <h5>花生油</h5>
-            </td>
-
-            <td align="right">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-              <span class="badge">1</span>
-              <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-
-    </div>
+    {{cart-component}}
   </div>
 </div>
 
@@ -158,7 +54,7 @@
           </td>
 
           <td>
-            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> 160</span>
+            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> {{totalAmount}}</span>
           </td>
       </tr>
 
@@ -168,7 +64,7 @@
           </td>
 
           <td>
-            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> 20</span>
+            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> {{freight}}</span>
           </td>
       </tr>
 
@@ -188,7 +84,7 @@
           </td>
 
           <td>
-            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> 160</span>
+            <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> {{total}}</span>
           </td>
       </tr>
 

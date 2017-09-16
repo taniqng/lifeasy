@@ -1,1 +1,29 @@
 {{yield}}
+<div class="row">
+  {{#each model as |item|}}
+    <div class="col-xs-12 col-md-3">
+      <table>
+        <tr>
+          <td width="39%">
+            <a href="#" class="thumbnail">
+              <img src="{{item.good.minPic}}" alt="数量： {{item.count}}">
+            </a>
+          </td>
+          <td width="40%">
+            <h5>{{item.good.name}}(￥{{item.good.price}})</h5>
+          </td>
+
+          <td align="right">
+            <span {{action "addToCart" item.good 1}} class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            <span class="badge">{{item.count}}</span>
+            <span {{action "addToCart" item.good -1}} class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    {{else}}
+      <div class="col-xs-12 col-md-3">
+      {{#link-to "shops.shop.goods" 1}} 你的购物车空空如也，赶快去购物吧^_^!{{/link-to}}
+      </div>
+  {{/each}}
+</div>
